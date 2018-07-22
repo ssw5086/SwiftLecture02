@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+   @IBOutlet weak var lbName:UILabel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +18,9 @@ class ViewController: UIViewController {
         print("hello,swift")
         let name:String = "ssw5086"
         let fullName = name+"WU"
-        print(fullName)
+        
+        lbName?.text = fullName
+        
         
     }
 
